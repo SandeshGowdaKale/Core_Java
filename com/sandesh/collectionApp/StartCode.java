@@ -20,17 +20,40 @@ public class StartCode {
         names.add("Roshni");
         names.add("vandna");
         names.add("vandna");
-
         System.out.println(names);
-        System.out.println(names.get(2));
 
-        //nON-Type Safe()
+        //remove   //note one Object is removed not both eg "vanada"
+        names.remove("vandna");
+        System.out.println(names);
+
+        //Size
+     System.out.println("SIZE :: "+names.size());
+
+     //impilicity it calling string class equals method for checking
+     //if student custom object than we have to override equals method
+     System.out.println(names.contains("sandesh"));
+    //update the element
+     names.set(1,"Dimple");
+     System.out.println(names);
+
+     //add another element in between  //not good practice it takes time reason shift operation.
+     //Arraylist is Good for fetch the element(note array is faster than Arraylist)
+     names.add(1,"Ram");
+     System.out.println(names);
+
+     //All elements will be clear empty []
+     names.clear();
+     System.out.println(names);
+
+     //System.out.println(names.get(2));
+
+/*        //nON-Type Safe()
         ArrayList list = new ArrayList();
         list.add("1");
         list.add("sachin");
         list.add(true);
         list.add(12.0f);
         list.add(22.22);
-        System.out.println(list);
+        System.out.println(list);*/
     }
 }
