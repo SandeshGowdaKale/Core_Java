@@ -18,6 +18,15 @@ public class TraversingElement {
             StringBuffer stringBuffer = new StringBuffer(listNames);
             System.out.println(stringBuffer.reverse());
         }
+        System.out.println("-------------------------------------------");
 
+        //Traversing Using Itertor: Forward Traversing
+
+        Iterator<String> itr=arrayList.iterator();
+
+        while (itr.hasNext()){
+            String next =itr.next();
+            System.out.println(next);
+        }
     }
 }
