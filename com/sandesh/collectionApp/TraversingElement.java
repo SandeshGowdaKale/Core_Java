@@ -3,6 +3,7 @@ package com.sandesh.collectionApp;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
+import java.util.TreeSet;
 
 public class TraversingElement {
     public static void main(String[] args) {
@@ -43,5 +44,11 @@ public class TraversingElement {
         arrayList.forEach(e->{
             System.out.println(e);
         });
+
+        System.out.println("-------------------Sorted by using TreeSet with forEach()----------------------------------");
+
+        TreeSet<String> treeSet = new TreeSet<>();  //duplicates not allowed
+        treeSet.addAll(arrayList);
+        treeSet.forEach(t->{System.out.println(t);});
     }
 }
