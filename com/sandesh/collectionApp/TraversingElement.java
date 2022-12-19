@@ -2,6 +2,7 @@ package com.sandesh.collectionApp;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class TraversingElement {
     public static void main(String[] args) {
@@ -27,6 +28,14 @@ public class TraversingElement {
         while (itr.hasNext()){
             String next =itr.next();
             System.out.println(next);
+        }
+
+        //BackWard Traversal of collection
+        System.out.println("----------------------------------------------");
+       ListIterator<String> litr =arrayList.listIterator(arrayList.size());
+        while (litr.hasPrevious()){
+            String previous = litr.previous();
+            System.out.println(previous);
         }
     }
 }
