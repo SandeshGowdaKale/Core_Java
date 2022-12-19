@@ -1,6 +1,7 @@
 package com.sandesh.collectionApp;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class TraversingElement {
     public static void main(String[] args) {
@@ -13,7 +14,10 @@ public class TraversingElement {
 
         //for each loop
         for(String listNames:arrayList){
-            System.out.println(listNames);
+            System.out.print(listNames + "\t" + listNames.length()+"\t");
+            StringBuffer stringBuffer = new StringBuffer(listNames);
+            System.out.println(stringBuffer.reverse());
         }
+
     }
 }
