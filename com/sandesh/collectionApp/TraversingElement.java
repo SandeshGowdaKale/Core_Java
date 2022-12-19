@@ -37,5 +37,11 @@ public class TraversingElement {
             String previous = litr.previous();
             System.out.println(previous);
         }
+
+        //Enumeration
+        System.out.println("-------------For Each Method--------------------------------");
+        arrayList.forEach(e->{
+            System.out.println(e);
+        });
     }
 }
